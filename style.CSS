@@ -1,0 +1,146 @@
+
+/* 1. Cài đặt chung cho toàn bộ trang */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #222222;
+    background-color: #f4f6f8;
+}
+
+/* 2. Phần đầu trang */
+#dauTrang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #123047;
+    color: white;
+    padding: 24px 40px;
+}
+
+
+/* Tiêu đề ĐÁ KHÔ */
+#dauTrang h1 {
+    margin: 20px;
+    font-size: 32px;
+    justify-content: left;
+    align-items: center;
+}
+
+/* Các liên kết trong menu */
+#dauTrang a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin-right: 24px;
+    padding: 8px 10px;
+    transition: color 0.3s ease;
+}
+
+/* Hiệu ứng khi rê chuột vào menu */
+#dauTrang a:hover {
+    color: #123047;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* 3. Các khu vực nội dung */
+#gioiThieu,
+#sanPham,
+#anToan,
+#lienHe {
+    background-color: white;
+    max-width: 1000px;
+    margin: 24px auto;
+    padding: 28px;
+    border-radius: 10px;
+}
+
+/* Tiêu đề các khu vực */
+#gioiThieu h2,
+#sanPham h2,
+#anToan h2,
+#lienHe h2 {
+    color: #123047;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Ảnh sản phẩm */
+#sanPham img {
+    display: block;
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 4. Phần chân trang */
+#chanTrang {
+    background-color: #123047;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 5. Giao diện trên điện thoại */
+@media (max-width: 600px) {
+    #dauTrang {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    #dauTrang a {
+        margin-right: 12px;
+    }
+
+    #gioiThieu,
+    #sanPham,
+    #anToan,
+    #lienHe {
+        margin: 16px 12px;
+        padding: 20px;
+    }
+
+    
+}
+
+
+#gioiThieu p,
+#sanPham p,
+#anToan p,
+#lienHe p {
+    color: #123047;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+#gioiThieu li,
+#sanPham li,
+#anToan li,
+#lienHe li {
+    font-size: 17px;
+} 
+
+.menu {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+
+.sanPham-noiDung {
+    display: block;
+}
+
+.sanPham-noiDung img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+}
